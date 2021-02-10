@@ -1,2 +1,2 @@
 # CapybaraQANinja
-Repositório para exercícios feitos através de aula do QA Ninja
+Repositório para exercícios feitos através de aulas do QA Ninja
