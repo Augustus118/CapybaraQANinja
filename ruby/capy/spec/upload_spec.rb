@@ -26,7 +26,6 @@ describe 'upload', :upload do
         attach_file('file-upload', @image)
         click_button 'Upload'
 
-        sleep 5
         img = find('#new-image')
         expect(img[:src]).to include '/uploads/Fluxo.png'
 

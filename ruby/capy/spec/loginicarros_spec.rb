@@ -1,8 +1,13 @@
-describe 'Testes com Login - icarros' do
+describe 'Testes com Login - icarros', :icarros do
 
-    it 'login com erro - senha inválida' do
+    before(:each)do
         visit 'https://www.icarros.com.br/login'
 
+    end
+
+
+    it 'login com erro - senha inválida' do
+       
         fill_in 'username', with: 'aabernardes@gmail.com'
         fill_in 'password', with: 'I789#6a'
 
@@ -14,8 +19,7 @@ describe 'Testes com Login - icarros' do
 
 
     it 'login com erro - usuário inválido' do
-        visit 'https://www.icarros.com.br/login'
-
+        
         fill_in 'username', with: 'alcalai1@gmail.com'
         fill_in 'password', with: 'I789#6e'
 
@@ -27,8 +31,7 @@ describe 'Testes com Login - icarros' do
 
 
     it 'login com erro - campos em branco' do
-        visit 'https://www.icarros.com.br/login'
-
+        
         click_button 'entrar'
 
         page.has_content?('Nome de usuário ou senha inválida.')
@@ -38,8 +41,7 @@ describe 'Testes com Login - icarros' do
     end
 
     it 'login com erro - login em branco' do
-        visit 'https://www.icarros.com.br/login'
-
+        
         fill_in 'password', with: 'I789#6e'
 
         click_button 'entrar'
@@ -50,8 +52,7 @@ describe 'Testes com Login - icarros' do
     end
 
     it 'login com erro - senha em branco' do
-        visit 'https://www.icarros.com.br/login'
-
+        
         fill_in 'username', with: 'aabernardes@gmail.com'
 
         click_button 'entrar'
@@ -63,8 +64,7 @@ describe 'Testes com Login - icarros' do
 
 
     it 'login com sucesso' do
-        visit 'https://www.icarros.com.br/login'
-
+        
         fill_in 'username', with: 'aabernardes@gmail.com'
         fill_in 'password', with: 'I789#6e'
 
