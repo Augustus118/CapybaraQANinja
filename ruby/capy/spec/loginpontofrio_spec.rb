@@ -5,7 +5,7 @@ describe 'Testes com Login - Página Ponto Frio', :ponto do
     
     end
 
-    it 'login com sucesso' do
+    it 'login com sucesso', :teste22 do
   
         
         fill_in 'Email', with: 'aabernardes@gmail.com'
