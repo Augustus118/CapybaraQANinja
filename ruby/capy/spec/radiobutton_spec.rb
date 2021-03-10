@@ -16,7 +16,7 @@ describe 'Botões de Radio', :radio do
     
     it 'Seleção por find' do
 
-        find('input[value=guardians').click
+        find('input[value=guardians]').click
 
     end  
 
