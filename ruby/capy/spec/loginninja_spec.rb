@@ -1,7 +1,7 @@
 describe 'Testes com Login - Página QA Ninja' do
 
     it 'login com sucesso' do
-        visit 'https://training-wheels-protocol.herokuapp.com/login'
+        visit '/login'
 
         fill_in 'username', with: 'stark'
         fill_in 'password', with: 'jarvis!'
@@ -15,7 +15,7 @@ describe 'Testes com Login - Página QA Ninja' do
 
 
     it 'login com erro - senha inválida' do
-        visit 'https://training-wheels-protocol.herokuapp.com/login'
+        visit '/login'
 
         fill_in 'username', with: 'stark'
         fill_in 'password', with: 'jarvi'
@@ -29,7 +29,7 @@ describe 'Testes com Login - Página QA Ninja' do
 
 
     it 'login com erro - login inválido' do
-        visit 'https://training-wheels-protocol.herokuapp.com/login'
+        visit '/login'
 
         fill_in 'username', with: 'starki'
         fill_in 'password', with: 'jarvis!'
@@ -43,7 +43,7 @@ describe 'Testes com Login - Página QA Ninja' do
 
 
     it 'login com erro - campos em branco' do
-        visit 'https://training-wheels-protocol.herokuapp.com/login'
+        visit '/login'
 
         click_button 'Login'
 
@@ -54,7 +54,7 @@ describe 'Testes com Login - Página QA Ninja' do
 
 
     it 'login com erro - login em branco' do
-        visit 'https://training-wheels-protocol.herokuapp.com/login'
+        visit '/login'
 
         fill_in 'password', with: 'jarvis!'
 
@@ -67,7 +67,7 @@ describe 'Testes com Login - Página QA Ninja' do
 
 
     it 'login com erro - senha em branco' do
-        visit 'https://training-wheels-protocol.herokuapp.com/login'
+        visit '/login'
 
         fill_in 'username', with: 'starki'
 

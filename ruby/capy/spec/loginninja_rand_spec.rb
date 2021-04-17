@@ -2,7 +2,7 @@ describe 'Login Randomico', :login2 do
 
 
     before(:each) do
-        visit 'https://training-wheels-protocol.herokuapp.com/login2'
+        visit '/login2'
 
     end    
 
